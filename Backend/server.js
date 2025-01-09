@@ -5,7 +5,6 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const app = express();
 
-const SECRET_KEY = '267fGjfk87178dfaAjnNSsa';
 
 app.use(cors());
 app.use(express.json());
