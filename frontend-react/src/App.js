@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 
+
+
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [isRegistering, setIsRegistering] = useState(false);
@@ -19,6 +21,7 @@ function App() {
   const [selectedStudent, setSelectedStudent] = useState(null);
   const [newGrade, setNewGrade] = useState({ znamka: '', vaha: '', popis: '' });
   const [average, setAverage] = useState(null);
+
 
   useEffect(() => {
     if (isLoggedIn || isRegistering) {
@@ -333,3 +336,4 @@ function App() {
 }
 
 export default App;
+
